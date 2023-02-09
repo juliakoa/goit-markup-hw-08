@@ -1,0 +1,13 @@
+@use "./utils/vars" as *;
+@import "./utils/globals";
+@import "./components/page-header";
+@import "./components/logo";
+@import "./components/slogan-section";
+@import "./components/introduction-section";
+@import "./components/activities-section";
+@import "./components/team-section";
+@import "./components/clients-section";
+@import "./components/project-section";
+@import "./components/page-footer";
+@import "./components/modal";
+@import "./components/service-form";

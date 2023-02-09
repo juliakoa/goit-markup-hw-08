@@ -1,0 +1,32 @@
+.clients-section {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+  }
+
+  &__card {
+    height: 92px;
+    width: 170px;
+    border-radius: 4px;
+    border: 1px solid #afb1b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    fill: #afb1b8;
+  }
+}
+
+.clients-section__card {
+  &:hover,
+  &:focus {
+    border-color: $actionColor;
+
+    & .clients-section__icon {
+      fill: $actionColor;
+    }
+  }
+}

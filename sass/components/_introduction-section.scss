@@ -1,0 +1,38 @@
+.introduction-section {
+  padding-bottom: 0;
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+  }
+
+  &__picture {
+    height: 120px;
+    width: 270px;
+    border-radius: 4px;
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    color: $descriptionColor;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-align: justify;
+    width: 270px;
+  }
+}

@@ -17,8 +17,17 @@ body {
 }
 
 .container {
-  max-width: 1200px;
   margin: 0 auto;
+  min-width: 320px;
+  max-width: 480px;
+
+  @include tablet {
+    max-width: 768px;
+  }
+
+  @include desktop {
+    max-width: 1200px;
+  }
 }
 
 .section {

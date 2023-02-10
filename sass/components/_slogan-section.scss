@@ -1,6 +1,6 @@
 .slogan-section {
-  height: 600px;
-  padding-top: 200px;
+  height: 400px;
+  padding-top: 118px;
   background-color: var(--footer-background-color);
   background-image: linear-gradient(
       to right,
@@ -12,17 +12,29 @@
   background-position: center;
   background-repeat: no-repeat;
 
+  @include desktop {
+    height: 600px;
+    padding-top: 200px;
+  }
+
   &__container {
     text-align: center;
   }
 
   &__slogan {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.6;
     letter-spacing: 0.06em;
     color: #fff;
     margin-bottom: 30px;
+    @include tablet {
+      font-size: 26px;
+    }
+    @include desktop {
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
 
   &__button {

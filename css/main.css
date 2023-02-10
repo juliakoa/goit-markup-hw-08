@@ -197,8 +197,8 @@ header {
 }
 
 .slogan-section {
-  height: 600px;
-  padding-top: 200px;
+  height: 400px;
+  padding-top: 118px;
   background-color: var(--footer-background-color);
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
@@ -206,16 +206,33 @@ header {
   background-position: center;
   background-repeat: no-repeat;
 }
+@media screen and (min-width: 1200px) {
+  .slogan-section {
+    height: 600px;
+    padding-top: 200px;
+  }
+}
 .slogan-section__container {
   text-align: center;
 }
 .slogan-section__slogan {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.6;
   letter-spacing: 0.06em;
   color: #fff;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .slogan-section__slogan {
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .slogan-section__slogan {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 .slogan-section__button {
   text-align: center;

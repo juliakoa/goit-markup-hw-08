@@ -930,12 +930,19 @@ header {
 
 .modal {
   position: relative;
-  height: 581px;
-  width: 528px;
+  height: 609px;
+  max-width: 450px;
   border-radius: 4px;
   background-color: #fff;
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    height: 581px;
+    min-width: 528px;
+    max-width: 528px;
+  }
 }
 .modal__button {
   position: absolute;

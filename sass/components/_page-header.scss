@@ -49,9 +49,19 @@ header {
 }
 
 .header-contact {
-  display: flex;
-  align-content: center;
-  column-gap: 50px;
+  display: none;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    row-gap: 10px;
+  }
+
+  @include desktop {
+    flex-direction: row;
+    column-gap: 50px;
+  }
 
   &__icon {
     fill: $descriptionColor;

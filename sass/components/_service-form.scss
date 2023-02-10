@@ -6,12 +6,17 @@
   &__title {
     font-size: 20px;
     font-weight: 700;
-    line-height: 1.17;
+    line-height: 1.5;
     letter-spacing: 0.03em;
     text-align: center;
     color: #212121;
-    margin-top: 40px;
     margin-bottom: 12px;
+    max-width: 370px;
+
+    @include desktop {
+      line-height: 1.17;
+      max-width: 448px;
+    }
   }
 
   &__label {
@@ -22,7 +27,10 @@
     margin-bottom: 4px;
     display: block;
     text-align: left;
-    width: 448px;
+    width: 370px;
+    @include desktop {
+      width: 448px;
+    }
   }
 
   &__input-wrapper {
@@ -31,13 +39,15 @@
   }
 
   &__input-box {
-    width: 448px;
+    width: 370px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding-left: 42px;
     outline: none;
-
+    @include desktop {
+      width: 448px;
+    }
     &:focus,
     &:hover {
       border-color: $actionColor;
@@ -65,7 +75,7 @@
   }
 
   &__textarea {
-    width: 448px;
+    width: 370px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -74,6 +84,10 @@
     padding-top: 12px;
     padding-left: 16px;
     outline: none;
+
+    @include desktop {
+      width: 448px;
+    }
 
     &::placeholder {
       font-size: 12px;
@@ -95,11 +109,15 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: $descriptionColor;
     margin-bottom: 30px;
+    @include desktop {
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
 
   &__checkbox-box {

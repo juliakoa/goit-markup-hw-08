@@ -929,6 +929,7 @@ header {
 }
 
 .modal {
+  padding: 40px;
   position: relative;
   height: 609px;
   max-width: 450px;
@@ -977,12 +978,18 @@ header {
 .service-form__title {
   font-size: 20px;
   font-weight: 700;
-  line-height: 1.17;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
-  margin-top: 40px;
   margin-bottom: 12px;
+  max-width: 370px;
+}
+@media screen and (min-width: 1200px) {
+  .service-form__title {
+    line-height: 1.17;
+    max-width: 448px;
+  }
 }
 .service-form__label {
   font-size: 12px;
@@ -992,19 +999,29 @@ header {
   margin-bottom: 4px;
   display: block;
   text-align: left;
-  width: 448px;
+  width: 370px;
+}
+@media screen and (min-width: 1200px) {
+  .service-form__label {
+    width: 448px;
+  }
 }
 .service-form__input-wrapper {
   position: relative;
   margin-bottom: 10px;
 }
 .service-form__input-box {
-  width: 448px;
+  width: 370px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
   outline: none;
+}
+@media screen and (min-width: 1200px) {
+  .service-form__input-box {
+    width: 448px;
+  }
 }
 .service-form__input-box:focus, .service-form__input-box:hover {
   border-color: #2196f3;
@@ -1039,7 +1056,7 @@ header {
   fill: #212121;
 }
 .service-form__textarea {
-  width: 448px;
+  width: 370px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1048,6 +1065,11 @@ header {
   padding-top: 12px;
   padding-left: 16px;
   outline: none;
+}
+@media screen and (min-width: 1200px) {
+  .service-form__textarea {
+    width: 448px;
+  }
 }
 .service-form__textarea::-webkit-input-placeholder {
   font-size: 12px;
@@ -1099,11 +1121,17 @@ header {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .service-form__checkbox-label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .service-form__checkbox-box {
   opacity: 0;

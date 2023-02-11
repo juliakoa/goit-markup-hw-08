@@ -560,7 +560,7 @@
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg
-          fill="currentColor"
+          fill="$fontColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -573,13 +573,46 @@
           ></path>
         </svg>
       </button>
-
-      <ul class="mobile-menu">
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-        <li><a href="" class="link">Career</a></li>
-      </ul>
+      <div class="mobile-menu">
+        <ul class="mobile-menu__navigation">
+          <li class="mobile-menu__navigation-list-item">
+            <a href="./index.html" class="mobile-menu__navigation-item"
+              >Agencja</a
+            >
+          </li>
+          <li class="mobile-menu__navigation-list-item">
+            <a href="./portfolio.html" class="mobile-menu__navigation-item"
+              >Portfolio</a
+            >
+          </li>
+          <li class="mobile-menu__navigation-list-item">
+            <a href="#contact" class="mobile-menu__navigation-item">Kontakt</a>
+          </li>
+        </ul>
+        <div class="mobile-menu__wrapper">
+          <ul class="mobile-menu__contact-list">
+            <li class="mobile-menu__contact-list-item">
+              <a href="tel:+48111111111" class="mobile-menu__contact-tel">
+                +48 111 111 111</a
+              >
+            </li>
+            <li class="mobile-menu__contact-list-item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="mobile-menu__contact-mail"
+              >
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu__socialmedia-list">
+            <li class="mobile-menu__socialmedia-item">Instagram</li>
+            <li class="mobile-menu__socialmedia-item">Twitter</li>
+            <li class="mobile-menu__socialmedia-item">Facebook</li>
+            <li class="mobile-menu__socialmedia-item">Linkedin</li>
+          </ul>
+        </div>
+      </div>
     </div>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">

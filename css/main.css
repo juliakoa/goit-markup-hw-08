@@ -87,8 +87,20 @@ body {
 }
 
 header {
+  max-width: 480px;
+  margin: 0 auto;
   border-bottom: 1px solid #ececec;
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  header {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header {
+    max-width: 1600px;
+  }
 }
 
 .header__container {
@@ -599,7 +611,19 @@ header {
 }
 
 .team-section {
+  margin: 0 auto;
+  max-width: 480px;
   background-color: #f5f4fa;
+}
+@media screen and (min-width: 768px) {
+  .team-section {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-section {
+    max-width: 1600px;
+  }
 }
 .team-section__wrapper {
   display: -webkit-box;

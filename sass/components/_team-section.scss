@@ -1,5 +1,13 @@
 .team-section {
+  margin: 0 auto;
+  max-width: 480px;
   background-color: #f5f4fa;
+  @include tablet {
+    max-width: 768px;
+  }
+  @include desktop {
+    max-width: 1600px;
+  }
 
   &__wrapper {
     display: flex;

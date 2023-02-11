@@ -95,7 +95,7 @@ header {
 .navigation__mobile {
   position: relative;
 }
-.menu-toggle {
+.menu-toggle-open {
   height: 16px;
   width: 30px;
   display: flex;
@@ -147,6 +147,9 @@ header {
   position: absolute;
   top: 21px;
   right: 21px;
+  border: none;
+  outline: none;
+  background-color: transparent;
   &:hover,
   &:focus {
     fill: $actionColor;

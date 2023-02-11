@@ -210,7 +210,7 @@ header {
   position: relative;
 }
 
-.menu-toggle {
+.menu-toggle-open {
   height: 16px;
   width: 30px;
   display: -webkit-box;
@@ -234,11 +234,11 @@ header {
   border: none;
   outline: none;
 }
-.menu-toggle:hover, .menu-toggle:focus {
+.menu-toggle-open:hover, .menu-toggle-open:focus {
   fill: #2196f3;
 }
 @media screen and (min-width: 768px) {
-  .menu-toggle {
+  .menu-toggle-open {
     display: none;
   }
 }
@@ -272,6 +272,9 @@ header {
   position: absolute;
   top: 21px;
   right: 21px;
+  border: none;
+  outline: none;
+  background-color: transparent;
 }
 .menu-container .menu-toggle:hover, .menu-container .menu-toggle:focus {
   fill: #2196f3;

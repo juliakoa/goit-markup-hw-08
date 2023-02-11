@@ -124,21 +124,21 @@ header {
             column-gap: 46px;
   }
 }
-.navigation__list__item {
+.navigation__item {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
 }
-.navigation__list__item:hover, .navigation__list__item:focus {
+.navigation__item:hover, .navigation__item:focus {
   color: #2196f3;
 }
-.navigation__list__item--is-active {
+.navigation__item--is-active {
   color: #2196f3;
   position: relative;
 }
-.navigation__list__item--is-active::after {
+.navigation__item--is-active::after {
   position: absolute;
   top: 44.41px;
   left: 0;

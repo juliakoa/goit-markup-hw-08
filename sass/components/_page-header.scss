@@ -15,37 +15,38 @@ header {
 
   &__list {
     display: none;
+
     @include tablet {
       display: flex;
       column-gap: 46px;
     }
+  }
 
-    &__item {
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 1.14;
-      letter-spacing: 0.02em;
-      color: $fontColor;
+  &__item {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $fontColor;
 
-      &:hover,
-      &:focus {
-        color: $actionColor;
-      }
+    &:hover,
+    &:focus {
+      color: $actionColor;
+    }
 
-      &--is-active {
-        color: $actionColor;
-        position: relative;
+    &--is-active {
+      color: $actionColor;
+      position: relative;
 
-        &::after {
-          position: absolute;
-          top: 44.41px;
-          left: 0;
-          content: "";
-          height: 4px;
-          width: 100%;
-          border-radius: 2px;
-          background: $actionColor;
-        }
+      &::after {
+        position: absolute;
+        top: 44.41px;
+        left: 0;
+        content: "";
+        height: 4px;
+        width: 100%;
+        border-radius: 2px;
+        background: $actionColor;
       }
     }
   }

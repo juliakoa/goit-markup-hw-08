@@ -93,34 +93,23 @@ header {
 }
 
 .navigation__mobile {
-  min-height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.menu {
-  display: flex;
-  padding: 0;
-  margin: 0;
-
-  @include tablet {
-    display: none;
-  }
+  position: relative;
 }
 .menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
+  height: 16px;
+  width: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  position: absolute;
+  top: 50%;
+  right: 22px;
+  transform: translateY(-50%);
   margin: 0;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
   border: none;
-  border-radius: 50%;
   outline: none;
 
   @include tablet {
@@ -130,8 +119,9 @@ header {
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+  fill: $actionColor;
 }
+
 .menu-container {
   position: fixed;
   top: 0;

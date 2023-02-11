@@ -157,9 +157,11 @@ header {
 }
 
 .mobile-menu {
-  &__navigation {
-    margin-bottom: 302px;
-  }
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   &__navigation-list-item {
     &:not(:last-child) {
       margin-bottom: 32px;

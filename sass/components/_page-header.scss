@@ -1,5 +1,6 @@
 header {
   border-bottom: 1px solid #ececec;
+  position: relative;
 }
 
 .header__container {
@@ -7,6 +8,10 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 80px;
+  margin-left: 15px;
+  @include tablet {
+    margin-left: auto;
+  }
 }
 
 .navigation {
@@ -92,9 +97,6 @@ header {
   }
 }
 
-.navigation__mobile {
-  position: relative;
-}
 .menu-toggle-open {
   height: 16px;
   width: 30px;

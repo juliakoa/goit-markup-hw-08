@@ -88,6 +88,7 @@ body {
 
 header {
   border-bottom: 1px solid #ececec;
+  position: relative;
 }
 
 .header__container {
@@ -101,6 +102,12 @@ header {
       -ms-flex-align: center;
           align-items: center;
   height: 80px;
+  margin-left: 15px;
+}
+@media screen and (min-width: 768px) {
+  .header__container {
+    margin-left: auto;
+  }
 }
 
 .navigation {
@@ -204,10 +211,6 @@ header {
 }
 .header-contact__item:hover .header-contact__icon, .header-contact__item:focus .header-contact__icon {
   fill: #2196f3;
-}
-
-.navigation__mobile {
-  position: relative;
 }
 
 .menu-toggle-open {

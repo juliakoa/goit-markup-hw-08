@@ -28,16 +28,36 @@
           <a href="./index.html" class="logo"
             >Web<span class="logo--dark">Studio</span></a
           >
+          <div class="navigation__mobile">
+            <button
+              class="menu-toggle-open js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
           <ul class="navigation__list">
             <li>
-              <a href="./index.html" class="navigation__item">Agencja</a>
+              <a
+                href="./index.html"
+                class="navigation__item navigation__item--is-active"
+                >Agencja</a
+              >
             </li>
             <li>
-              <a
-                href="./portfolio.html"
-                class="navigation__item navigation__item--is-active"
-                >Portfolio</a
-              >
+              <a href="./portfolio.html" class="navigation__item">Portfolio</a>
             </li>
             <li><a href="#contact" class="navigation__item">Kontakt</a></li>
           </ul>
@@ -65,13 +85,13 @@
     <main>
       <section class="section project-section">
         <div class="container">
-          <ul class="project-section__buttons-wrapper">
+          <!--<ul class="project-section__buttons-wrapper">
             <li><button type="button" class="button">Wszystkie</button></li>
             <li><button type="button" class="button">Strony</button></li>
             <li><button type="button" class="button">Aplikacje</button></li>
             <li><button type="button" class="button">Dizajn</button></li>
             <li><button type="button" class="button">Marketing</button></li>
-          </ul>
+          </ul>-->
           <ul class="project-section__projects-wrapper">
             <li class="project-section__card">
               <div class="project-section__window">
@@ -79,8 +99,6 @@
                   class="project-section__picture"
                   src="images/portfolio1.jpg"
                   alt="laptop"
-                  width="370"
-                  height="294"
                 />
                 <div class="project-section__overlay">
                   <p class="project-section__overlay-description">
@@ -100,8 +118,6 @@
                   class="project-section__picture"
                   src="images/portfolio2.jpg"
                   alt="mecz koszykówki"
-                  width="370"
-                  height="294"
                 />
                 <div class="project-section__overlay">
                   <p class="project-section__overlay-description">
@@ -123,8 +139,6 @@
                   class="project-section__picture"
                   src="images/portfolio3.jpg"
                   alt="logo restauracji"
-                  width="370"
-                  height="294"
                 />
                 <div class="project-section__overlay">
                   <p class="project-section__overlay-description">
@@ -144,8 +158,6 @@
                   class="project-section__picture"
                   src="images/portfolio4.jpg"
                   alt="słuchawki"
-                  width="370"
-                  height="294"
                 />
                 <div class="project-section__overlay">
                   <p class="project-section__overlay-description">
@@ -165,8 +177,6 @@
                   class="project-section__picture"
                   src="images/portfolio5.jpg"
                   alt="pudełka"
-                  width="370"
-                  height="294"
                 />
                 <div class="project-section__overlay">
                   <p class="project-section__overlay-description">
@@ -186,8 +196,6 @@
                   class="project-section__picture"
                   src="images/portfolio6.jpg"
                   alt="monitor"
-                  width="370"
-                  height="294"
                 />
                 <div class="project-section__overlay">
                   <p class="project-section__overlay-description">
@@ -354,5 +362,68 @@
         </form>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <div class="mobile-menu">
+        <ul class="mobile-menu__navigation">
+          <li class="mobile-menu__navigation-list-item">
+            <a href="./index.html" class="mobile-menu__navigation-item"
+              >Agencja</a
+            >
+          </li>
+          <li class="mobile-menu__navigation-list-item">
+            <a href="./portfolio.html" class="mobile-menu__navigation-item"
+              >Portfolio</a
+            >
+          </li>
+          <li class="mobile-menu__navigation-list-item">
+            <a href="#contact" class="mobile-menu__navigation-item">Kontakt</a>
+          </li>
+        </ul>
+        <div class="mobile-menu__wrapper">
+          <ul class="mobile-menu__contact-list">
+            <li class="mobile-menu__contact-list-item">
+              <a href="tel:+48111111111" class="mobile-menu__contact-tel">
+                +48 111 111 111</a
+              >
+            </li>
+            <li class="mobile-menu__contact-list-item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="mobile-menu__contact-mail"
+              >
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu__socialmedia-list">
+            <li class="mobile-menu__socialmedia-item">Instagram</li>
+            <li class="mobile-menu__socialmedia-item">Twitter</li>
+            <li class="mobile-menu__socialmedia-item">Facebook</li>
+            <li class="mobile-menu__socialmedia-item">Linkedin</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

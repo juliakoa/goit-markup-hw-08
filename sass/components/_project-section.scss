@@ -8,19 +8,41 @@
 
   &__projects-wrapper {
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 0;
+    }
   }
 
   &__card {
-    flex-basis: calc((100% - 60px) / 3);
     border: #eeeeee solid 1px;
     padding-bottom: 20px;
+    max-width: 450px;
+    @include desktop {
+      max-width: 354px;
+    }
+    @include desktop {
+      max-width: 370px;
+    }
   }
 
   &__picture {
     width: 100%;
+    height: 294px;
+    max-width: 450px;
+    @include tablet {
+      max-width: 354px;
+      height: 354px;
+    }
+    @include desktop {
+      max-width: 370px;
+    }
   }
 
   &__window {

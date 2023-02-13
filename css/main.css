@@ -70,6 +70,7 @@ body {
   cursor: pointer;
   border: none;
   padding: 6px 22px;
+  color: #212121;
 }
 .button:hover, .button:focus {
   background-color: #2196f3;

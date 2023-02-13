@@ -148,7 +148,9 @@
   }
 
   &__button {
-    text-align: center;
+    @extend %main-button;
+    padding-left: 76px;
+    padding-right: 76px;
   }
 }
 

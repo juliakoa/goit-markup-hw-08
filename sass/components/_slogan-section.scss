@@ -53,7 +53,9 @@
   }
 
   &__button {
-    text-align: center;
+    @extend %main-button;
+    padding-left: 42px;
+    padding-right: 41px;
   }
 }
 

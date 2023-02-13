@@ -146,12 +146,15 @@
     }
   }
   &__button {
+    @extend %main-button;
     padding-left: 42px;
-    display: flex;
-    align-items: center;
+    padding-right: 76px;
+    position: relative;
   }
 
   &__icon {
+    position: absolute;
+    top: 13px;
     fill: #fff;
     margin-left: 24px;
   }

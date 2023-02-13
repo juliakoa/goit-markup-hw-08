@@ -857,6 +857,10 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin-left: 15px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 30px;
@@ -1014,6 +1018,12 @@ header {
 @media screen and (min-width: 1200px) {
   .footer-container__wrapper {
     text-align: start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container-portfolio {
+    max-width: 1200px;
   }
 }
 

@@ -107,7 +107,8 @@
     }
     &__socialmedia-list {
       display: flex;
-      column-gap: 10px;
+      gap: 10px;
+      flex-wrap: wrap;
     }
     &__socialmedia-item {
       display: block;
